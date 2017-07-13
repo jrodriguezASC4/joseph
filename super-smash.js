@@ -17,8 +17,8 @@ console.log("You fought " + fightAnswer + " in the " + randomStage + " and hit t
 console.log("Too bad. Mewtwo wins!")
 
 var retry = prompt("Would you like to try again? y/n: ")
-if (retry === y) {
-    init();
+if (retry === "y") {
+    reload();
 } else {
-    console.log("Peace brudda")
+    console.log("Peace brudda");
 }
