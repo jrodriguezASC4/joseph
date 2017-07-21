@@ -1,3 +1,12 @@
+// This program is intended to be able to subtract health
+// from the player's HP and CPU's HP and show the changes.
+// The input should come from the user clicking at certain
+// coordinates to output a move that will subtract HP
+// depending on which one was chosen. When the HP changes,
+// the text above the options should change to reflect the
+// user's choice, and the HP should be updated without
+// having any overlapping text.
+
 function setup() {
     createCanvas(560,560);
     background(0,0,0);
@@ -34,18 +43,61 @@ function setup() {
     ellipse(cpuX,cpuY,55,55); // Draws the CPU
 
     fill(0,255,0);
-    rect(cpuX-70,cpuY-60, 150, 20);
+    rect(cpuX-70,cpuY-60, 150, 20); // Draws the CPU's HP
     
-    var charizard = [["Charizard"],["HP",400],["Blaze",50],["Solar Power",90]];
-    var blastoise = [["Blastoise"],["HP",400],["Water Blast",80],["Hydro Pump",100]];
+    var charizard = [["CHARIZARD"],["HP",400],["Blaze",20],["Solar Power",40]];
+    var blastoise = [["BLASTOISE"],["HP",200],["Water Blast",80],["Hydro Pump",100]];
 
+    // Displays "RESET" with a 90 degree rotation alongside the right side empty box
+
+    textSize(90);
+    fill(0,0,200);
+    rotate(HALF_PI);
+    text("RESET",130,-435);
+    rotate(HALF_PI+HALF_PI+HALF_PI);
+    
+    // Displays Charizard's name above his HP meter and 'image', just a red circle
     textSize(20);
     fill(255,0,0);
     text(charizard[0][0], cpuX-43, cpuY - 75);
 
-    textSize(15);
+    // Displays Charizard's HP to the left of his meter.
+    textSize(20);
     fill(255,0,0);
-    text(charizard[1][0] + ": ", cpuX - 190, cpuY - 45);
+    text(charizard[1][0] + ": " + charizard[1][1], cpuX - 190, cpuY - 45);
+
+    // Displays Blastoise's name above his HP meter
+    textSize(20);
+    fill(0,0,255);
+    text(blastoise[0][0], playerX-43, playerY - 75);
+
+
+    // Displays Blastoise's HP to the right of his meter
+    textSize(20);
+    fill(0,0,255);
+    text(blastoise[1][0] + ": " + blastoise[1][1], playerX + 130, playerY - 43 );
+
+    // Displays text prompting the user to pick a move
+    textSize(22);
+    fill(0,0,0);
+    text("What will " + blastoise[0][0] + " do?", 50, 423);
+
+    // Displays Blastoise's first move as text.
+    textSize(20);
+    fill(0,0,0);
+    text(blastoise[2][0],65,475);
+
+    // Displays Blastoise's second move as text.
+    textSize(20);
+    fill(0,0,0);
+    text(blastoise[3][0],240,475);
+
+
+
+
+
+
+
 
 
 
