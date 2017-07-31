@@ -1,0 +1,22 @@
+<!doctype html>
+<?php
+$url = "http://api.openweathermap.org/data/2.5/forecast?id=5125771&APPID=fd2b5749e19ab379194b117752f4be84";
+$getweather = simplexml_load_file($url);
+$gethumidity = $getweather->list.>item.>humidity['value'];
+$gettemp = &getweather->list->item->temperature['value'];
+?>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Current Manhattan weather</title>
+    </head>
+
+<body>
+    <h1>Manhattan's Weather</h1>
+    <ul>
+        <li>Humidity: <? echo($gethumidity); ?>%</li>
+        <li>Temperature: <? echo($gettemp); ?>; ?> &deg;F</li>
+    </ul>
+</body>
+</html>
+
