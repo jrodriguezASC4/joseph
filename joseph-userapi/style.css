@@ -1,0 +1,78 @@
+html {
+    background-image: url();
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(red, yellow); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(red, yellow); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(red, yellow); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(red, yellow); /* Standard syntax */
+}
+
+head {
+  padding: 70px;
+}
+
+b1 {
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+  margin: auto;
+  width: auto;
+  border: 3px solid green;
+  padding: 10px;
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  overflow-x: hidden;
+}
+
+h2 {
+  font-family: 'Lobster', cursive;
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+img2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+p1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2em;
+}
+
+p {
+  font-style: normal;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 1em;
+}
+
+p.normal {
+  font-style: normal;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 1em;
+}
+
+p.italic {
+  font-style: italic;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 1em;
+}
+
+p.oblique {
+  font-style: oblique;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 1em;
+}
+
