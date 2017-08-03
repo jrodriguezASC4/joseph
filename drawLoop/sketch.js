@@ -25,9 +25,16 @@ var randomRed = Math.floor(Math.random()*255)
 var randomGreen= Math.floor(Math.random()*255)
 var randomBlue = Math.floor(Math.random()*255)
 
+// function setup() {
+//     cnv = createCanvas(windowWidth, windowHeight)
+//     background(randomRed,randomGreen,randomBlue)
+// }
+
 function setup() {
     cnv = createCanvas(windowWidth, windowHeight)
-    background(randomRed,randomGreen,randomBlue)
+    for (var i=0; i<255; i++) {
+    background(i/3, i/4, i/5);
+    }
 }
 
 var x = 100
