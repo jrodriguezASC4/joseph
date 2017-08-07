@@ -1,0 +1,26 @@
+/* font-family: 'Dosis', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+button {
+    font-family: 'Dosis', sans-serif;
+    cursor: crosshair;
+    margin: 4px;
+  }
+
+input {
+    margin: 4px;
+    color: blue;
+  }
+
+h1 {
+    font-family: 'Lato', sans-serif;
+}
+.choice {
+    font-family: 'Oswald', sans-serif;
+    padding: 5px;
+     text-align: center;
+    color: red;
+}
